@@ -1,0 +1,111 @@
+body {
+    min-height: 1600px; 
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f4f6;
+    margin: 0;
+    <!-- overflow: hidden; -->
+}
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.inner-container {
+    max-width: 960px;
+    text-align: center;
+}
+.name {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+.title {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+.description {
+    color: #374151;
+}
+.static-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    margin-left: 1rem;
+}
+.monkey-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.floating-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.left-icons i:nth-child(1) {
+    top: 20%;
+    left: 5%;
+    animation-delay: 0.5s;
+    color: #3b82f6; /* Equivalent to Tailwind's text-blue-500 */
+}
+.left-icons i:nth-child(2) {
+    top: 50%;
+    left: 10%;
+    animation-delay: 1s;
+    color: #16a34a; /* Equivalent to Tailwind's text-green-500 */
+}
+.left-icons i:nth-child(3) {
+    bottom: 20%;
+    left: 7%;
+    animation-delay: 1.5s;
+    color: #eab308; /* Equivalent to Tailwind's text-yellow-500 */
+}
+.left-icons i:nth-child(4) {
+    bottom: 10%;
+    left: 14%;
+    animation-delay: 1.5s;
+    color: #8b5cf6; /* Equivalent to Tailwind's text-yellow-500 */
+}
+.right-icons i:nth-child(1) {
+    top: 30%;
+    right: 8%;
+    animation-delay: 2s;
+    color: #8b5cf6; /* Equivalent to Tailwind's text-purple-500 */
+}
+.right-icons i:nth-child(2) {
+    top: 60%;
+    right: 5%;
+    animation-delay: 2.5s;
+    color: #dc2626; /* Equivalent to Tailwind's text-red-500 */
+}
+.right-icons i:nth-child(3) {
+    bottom: 30%;
+    right: 10%;
+    animation-delay: 0s;
+    color: #4f46e5; /* Equivalent to Tailwind's text-indigo-500 */
+}
+.right-icons i:nth-child(4) {
+    bottom: 20%;
+    right: 20%;
+    animation-delay: 0s;
+    color: #4f46e5; /* Equivalent to Tailwind's text-indigo-500 */
+}
+.left-icons, .right-icons {
+    position: absolute; /* Needed for positioning the floating icons */
+    width: 100%; /* Ensure they span the container width */
+    height: 100%; /* Ensure they span the container height */
+    pointer-events: none; /* Allows interaction with the content below */
+}
